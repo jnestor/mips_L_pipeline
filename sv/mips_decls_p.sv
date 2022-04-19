@@ -8,7 +8,7 @@
 package mips_decls_p;
 
   // opcodes from Table B.1 - add more as needed
-  typedef enum logic [5:0] { 
+  typedef enum logic [5:0] {
                              OP_RTYPE   = 6'd0,
                              OP_BLTGEZ  = 6'd1,
                              OP_J       = 6'd2,
@@ -22,6 +22,7 @@ package mips_decls_p;
 
    // function codes from table B.2 - add more as needed
    typedef enum logic [5:0] {
+                             F_JR  = 6'd8,
                              F_ADD = 6'd32,
                              F_SUB = 6'd34,
                              F_AND = 6'd36,
