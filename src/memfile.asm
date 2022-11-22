@@ -2,7 +2,7 @@
 main:
   addi $2, $0, 5         # initialize $2 = 5    00 20020005
   addi $3, $0, 12        # initialize $3 = 12   04 2003000c
-  addi $7, $3, −9        # initialize $7 = 3    08 2067fff71
+  addi $7, $3, −9        # initialize $7 = 3    08 2067fff7
   or $4, $7, $2          # $4 = (3 OR 5) = 7    0c 00e22025
   and $5, $3, $4         # $5 = (12 AND 7) = 4  10 00642824
   add $5, $5, $4         # $5 = 4 + 7 = 11      14 00a42820
