@@ -6,16 +6,16 @@ main:
     jal  max
     add  $0, $0, $0
     add $t0, $v0, $0
-#    sw   $v0, 84($0)
+    sw   $v0, 84($0)
 
 loop:
     j    loop
     add  $0, $0, $0
 max:
-    slt  $t0, $a0, $a1
+    slt  $t0, $a1, $a0
     add  $0, $0, $0
     add  $0, $0, $0
-    bne  $t0, $0, a1max
+    beq  $t0, $0, a1max
     add  $0, $0, $0
     add  $v0, $a0, $0
     jr   $ra
@@ -24,6 +24,3 @@ max:
     add  $v0, $a1, $0
     jr  $ra
     add $0, $0, $0
-
-
-
