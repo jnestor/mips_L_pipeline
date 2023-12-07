@@ -1,7 +1,7 @@
    .global main
    .set noreorder
 main:
-    addi $a0, $0, 7      #    0    20050007
+    addi $a0, $0, 7      #    0    20040007
     addi $a1, $0, 33     #    4    20050021
     jal  max             #    8    0C000008
     add  $0, $0, $0      #    C    00000020
